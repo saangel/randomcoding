@@ -4,7 +4,9 @@ a=open("test.dat")
 b=open("test2.dat","w")
 f=a.read()
 g=f.split("\n")
-q1=[g[11*i:11*(i+1)] for i in range(30)]
+nlines=6
+nquestions=16
+q1=[g[nlines*i:nlines*(i+1)] for i in range(nquestions)]
 # these two lines can be commented if you want to shuffle last question also
 last=q1[-1]
 q2=q1[:-1]
